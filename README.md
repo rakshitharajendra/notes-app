@@ -75,4 +75,4 @@ AI tools significantly improved development speed and reduced debugging time. Th
 - Managing state flow between edit mode and create mode
 - Ensuring smooth UI navigation between create, edit, and view.
 
-## NOTE: Environment variables are not included for security reasons. Please create a `.env` file locally.
+
