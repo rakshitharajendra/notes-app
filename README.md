@@ -8,34 +8,34 @@
 - Delete notes
 
 ## Setup and Run Instructions:
-- 1. Clone the repository
-git clone https://github.com/your-username/notes-app.git
-cd notes-app
+1. Clone the repository
+- git clone https://github.com/your-username/notes-app.git
+- cd notes-app
 
-- 2. Backend setup
-cd server
-npm install
-node server.js
-Server will run on: http://localhost:5000
+2. Backend setup
+- cd server
+- npm install
+- node server.js
+- Server will run on: http://localhost:5000
 
-- 3. Frontend setup
-cd client
-npm install
-npm run dev
-Frontend will run on: http://localhost:5173
+3. Frontend setup
+- cd client
+- npm install
+- npm run dev
+- Frontend will run on: http://localhost:5173
 
 ## Technology Stack Used
-# Frontend:
-React (Vite)
-Axios
-CSS
-# Backend:
-Node.js
-Express.js
-MongoDB Atlas
-Mongoose
-CORS
-dotenv
+1. Frontend:
+- React (Vite)
+- Axios
+- CSS
+2. Backend:
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- CORS
+- dotenv
 
 ## Assumptions Made During Development
 - Tags are entered as space-separated values
@@ -73,11 +73,4 @@ AI tools significantly improved development speed and reduced debugging time. Th
 - Resolving MongoDB update timestamp not refreshing properly
 - Debugging tags.trim is not a function issue in React state
 - Managing state flow between edit mode and create mode
-- Ensuring smooth UI navigation between create, edit, and view modes
-
-## Conclusion
-
-This project demonstrates effective AI-assisted (vibe coding) development, where AI tools were used as collaborative assistants to build a full-stack application efficiently and correctly.
-
-## Note
-This is a full-stack case study project.
+- Ensuring smooth UI navigation between create, edit, and view.
