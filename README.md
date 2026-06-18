@@ -9,7 +9,7 @@
 
 ## Setup and Run Instructions:
 1. Clone the repository
-- git clone https://github.com/your-username/notes-app.git
+- git clone https://github.com/rakshitharajendra/notes-app.git
 - cd notes-app
 
 2. Backend setup
