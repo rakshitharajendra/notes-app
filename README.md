@@ -7,43 +7,55 @@
 - Edit notes
 - Delete notes
 
-## Tech Stack
-- React (Frontend)
-- Node.js + Express (Backend)
-- MongoDB Atlas (Database)
+## Setup and Run Instructions:
+- 1. Clone the repository
+git clone https://github.com/your-username/notes-app.git
+cd notes-app
 
-## How to run
-
-### Backend
+- 2. Backend setup
 cd server
 npm install
 node server.js
+Server will run on: http://localhost:5000
 
-### Frontend
+- 3. Frontend setup
 cd client
 npm install
 npm run dev
+Frontend will run on: http://localhost:5173
+
+## Technology Stack Used
+# Frontend:
+React (Vite)
+Axios
+CSS
+# Backend:
+Node.js
+Express.js
+MongoDB Atlas
+Mongoose
+CORS
+dotenv
+
+## Assumptions Made During Development
+- Tags are entered as space-separated values
+- Each note contains title, content, and tags
+- MongoDB Atlas is used as cloud database
+- No authentication system is implemented
+- Single-user note management system
+- Timestamp is handled using MongoDB createdAt and updatedAt
 
 ## AI Tools & Assisted Development
 
 During the development of this project, I used multiple AI-assisted tools to improve productivity, debugging efficiency, and code quality.
 
-## Tools Used:
+This project was developed using AI-assisted development tools including ChatGPT and GitHub Copilot.
 
-**ChatGPT (OpenAI)**  
-  Used for debugging backend API issues, fixing MongoDB connection errors, resolving React state management bugs, improving update functionality, and optimizing overall project structure.
+ChatGPT was primarily used for debugging API issues, fixing React state handling problems, resolving update functionality bugs, and improving backend route structure. It also helped in handling edge cases like tag formatting and ensuring proper data flow between frontend and backend.
 
-**GitHub Copilot**  
-  Assisted in writing boilerplate code faster, generating React components, Express routes, and CRUD operations efficiently.
+GitHub Copilot assisted in writing boilerplate code faster, especially for React components and Express routes, which improved overall development speed.
 
-**Cursor AI (VS Code AI Editor)**  
-  Helped with real-time code suggestions, refactoring, and improving code readability and structure during development.
-
-**MongoDB Atlas Documentation + AI Assistance**  
-  Used to understand database setup, schema design, authentication issues, and connection string configuration.
-
-**Stack Overflow (with AI interpretation)**  
-  Used as a reference for common issues, with AI helping to simplify and apply solutions correctly.
+These tools significantly reduced development time and helped in identifying and fixing errors more efficiently.
 
 
 ##  Impact of AI Usage
@@ -54,6 +66,14 @@ AI tools significantly improved development speed and reduced debugging time. Th
 - Better structuring of frontend and backend integration  
 - Improved handling of API requests and database operations  
 - Enhancing overall code quality and maintainability  
+
+## Challenges Encountered
+- Fixing update (PUT) functionality in React and Express integration
+- Handling tag formatting consistently between frontend and backend
+- Resolving MongoDB update timestamp not refreshing properly
+- Debugging tags.trim is not a function issue in React state
+- Managing state flow between edit mode and create mode
+- Ensuring smooth UI navigation between create, edit, and view modes
 
 ## Conclusion
 
