@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* APP LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* TOP BAR */
+.topbar {
+  position: fixed;
+  top: 20px;
+  left: 700px;
+  font-size: 42px;
+  font-weight: 800;
+  z-index: 100;
+}
+.editor {
+  margin-top: 90px;
+  max-width: 700px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #111a2e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #1f2a44;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background: #2b3a5f;
+}
+
+.sidebar input {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.topbar {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  font-weight: 800;
+  opacity: 0.95;
+  text-align: center;
+}
+.noteCount {
+  color: #94a3b8;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(180px, 1fr)
+  );
+  gap: 15px;
+}
+
+/* NOTE CARD */
+.card {
+  aspect-ratio: 1 / 1;
+  background: #16223a;
+  padding: 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #1d2d4d;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  flex: 1;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.card span {
+  color: #a78bfa;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* DATE AT BOTTOM */
+.time {
+  margin-top: auto;
+  font-size: 11px;
+  opacity: 0.6;
+  padding-top: 10px;
+}
+
+/* CREATE NOTE */
+.editor {
+  max-width: 700px;
+}
+
+.editor h2 {
+  margin-bottom: 30px;
+}
+
+.editor input,
+.editor textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #16223a;
+  color: white;
+}
+
+.editor textarea {
+  height: 180px;
+  resize: none;
+}
+
+.primary {
+  margin-top: 15px;
+  background: #4f46e5;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.primary:hover {
+  opacity: 0.9;
+}
+
+/* EMPTY STATE */
+.empty {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBox {
+  background: #111a2e;
+  padding: 25px;
+  border-radius: 15px;
+  width: 550px;
+  max-width: 90%;
+}
+
+.modalBox h2 {
+  margin-bottom: 10px;
+}
+
+.modalBox p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.tagBox {
+  margin-top: 18px;
+}
+
+.tagBox small {
+  color: #a78bfa;
+  font-size: 14px;
+}
+
+.danger {
+  margin-top: 15px;
+  background: #ef4444;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.danger:hover {
+  opacity: 0.9;
+}
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.editBtn {
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #f59e0b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+.modalActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.editBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #f59e0b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+}
+
+.danger {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.editHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #64748b;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background: #475569;
+}
